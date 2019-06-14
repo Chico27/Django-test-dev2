@@ -2,8 +2,8 @@
 
 {% block content %}
 
-<form method='POST'> {% csrf_token %}
-    {{ form.as_p }}
+<form action="." method="POST">{% csrf_token %}
+    <input type="test" name="title" placeholder="Your title"/>
 <input type="submit" value="Save" />
 </form>
 
