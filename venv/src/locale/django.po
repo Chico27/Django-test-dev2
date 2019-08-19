@@ -1,0 +1,4 @@
+#: my_site/views/index.py:13
+msgid "test message"
+msgstr "テストメッセージ"
+
