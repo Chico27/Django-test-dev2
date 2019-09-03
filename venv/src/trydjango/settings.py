@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'pages',
     'products',
     'expand_product',
+    'taking_over_product',
 
 ]
 
