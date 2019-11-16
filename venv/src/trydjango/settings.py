@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # third party
 
     # own
+    'book',
     'pages',
     'products',
     'expand_product',
