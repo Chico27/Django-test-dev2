@@ -11,7 +11,7 @@ def create_test():
 def bulk_create_test():
     start = time.time()
     book_objects = []
-    for i in range(10000):
+    for i in range(1000000):
         book_objects.append(Book())
     Book.objects.bulk_create(book_objects)
     process_time = time.time() - start
