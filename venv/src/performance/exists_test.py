@@ -1,19 +1,23 @@
 from book.models import Book
 import time
 
-def create_test():
+def mono_if_test():
+    bookAll = Book.objects.all()
+    print(bookAll)
     start = time.time()
     for i in range(10000):
-        Book.objects.create()
+        if bookAll:
+            pass
     process_time = time.time() - start
     print(process_time)
 
-def bulk_create_test():
+
+def exists_test():
+    bookAll = Book.objects.all()
+    print(bookAll)
     start = time.time()
-    book_objects = []
     for i in range(10000):
-        book_objects.append(Book())
-    Book.objects.bulk_create(book_objects)
+        if bookAll.exists():
+            pass
     process_time = time.time() - start
     print(process_time)
-
